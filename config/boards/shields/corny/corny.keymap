@@ -27,12 +27,12 @@
                 lower_layer {
 // ------------------------------------------------------------------------------------------------
 // | ESC  |  1  |  2  |  3  |  4  |  5  |                    |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |                    | LFT | DWN |  UP | RGT | F12 | RET  |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |                    | LFT | DWN |  UP | RGT | RET | F12  |
 // | SHFT | F1  | F2  | F3  | F4  | F5  |  boot  |  |        |  F6 | F7  |  F8 | F9  | F10 | F11  |
 //                    | GUI |     | TAB |                    | SPC |     | ALT |
                         bindings = <
 &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6     &kp N7   &kp N8      &kp N9      &kp N0        &kp BSPC
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                     &kp LEFT   &kp DOWN &kp UP      &kp RIGHT   &kp F12       &kp RET
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                     &kp LEFT   &kp DOWN &kp UP      &kp RIGHT   &kp RET       &kp F12
 &kp LSHFT  &mt LCTRL F1 &mt LGUI F2  &mt LALT F3  &kp F4       &kp F5       &bootloader  &none  &kp F6     &kp F7   &mt RALT F8 &mt RGUI F9 &mt RCTRL F10 &mt RSHFT F11
                                     &kp LGUI     &trans       &kp TAB                              &kp SPACE  &trans   &kp LALT
                         >;
@@ -42,12 +42,12 @@
                 raise_layer {
 // ------------------------------------------------------------------------------------------------
 // |  `   |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  |  -   |
-// |  -   |  ~  |  +  |  {  |  }  | PGDN|                    | PGUP|  =  |  [  |  ]  |  `  |  _   |
+// |  ~   |  -  |  +  |  {  |  }  | PGDN|                    | PGUP|  =  |  [  |  ]  |  _  |  `   |
 // | HOME |  |  | INS | DEL | END |PSCRN|        |  |  boot  | PGDN|  +  | ALT | GUI | "\" | SHFT |
 //                    | GUI |     | TAB |                    | SPC |     | ALT |
                         bindings = <
 &kp GRAVE      &kp EXCL       &kp AT       &kp HASH     &kp DLLR &kp PRCNT                       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR       &kp MINUS
-&kp MINUS      &kp TILDE      &kp PLUS     &kp LBRC     &kp RBRC &kp PG_DN                       &kp PG_UP &kp EQUAL &kp LBKT        &kp RBKT  &kp GRAVE      &kp UNDER
+&kp TILDE      &kp MINUS      &kp PLUS     &kp LBRC     &kp RBRC &kp PG_DN                       &kp PG_UP &kp EQUAL &kp LBKT        &kp RBKT  &kp UNDER      &kp GRAVE
 &mt LSHFT HOME &mt LCTRL PIPE &mt LGUI INS &mt LALT DEL &kp END  &kp PSCRN    &none  &bootloader &kp PG_DN &kp PLUS  &kp RALT        &kp RGUI  &mt RCTRL BSLH &kp RSHFT
                              &kp LGUI &trans   &kp TAB                      &kp SPACE   &trans  &kp LALT
                         >;
