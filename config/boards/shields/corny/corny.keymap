@@ -42,14 +42,14 @@
                 raise_layer {
 // ------------------------------------------------------------------------------------------------
 // |  `   |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  |  -   |
-// | CTRL | HOME| INS | DEL | END | PSCR|                    | PGUP|  =  |  [  |  ]  |  [  |  ]   |
-// | SHFT | CTRL| GUI | ALT |     |     |        |  |  boot  | PGDN|  +  | ALT | GUI | "\" | SHFT |
+// |  ~   | HOME| INS | DEL | END | PSCR|                    | PGUP|  =  |  [  |  ]  |  `  |  _   |
+// | SHFT |  |  | GUI | ALT |     |     |        |  |  boot  | PGDN|  +  |  {  |  }  | "\" | SHFT |
 //                    | GUI |     | TAB |                    | SPC |     | ALT |
                         bindings = <
-&kp GRAVE &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR       &kp MINUS
-&kp LCTRL &kp HOME  &kp INS  &kp DEL  &kp END  &kp PSCRN                    &kp PG_UP &kp EQUAL &kp LBKT        &kp RBKT  &kp LBKT       &kp RBKT
-&kp LSHFT &kp LCTRL &kp LGUI &kp LALT &trans   &trans    &none  &bootloader &kp PG_DN &kp PLUS  &kp RALT        &kp RGUI  &mt RCTRL BSLH &kp RSHFT
-                            &kp LGUI &trans   &kp TAB                      &kp SPACE   &trans  &kp LALT
+&kp GRAVE &kp EXCL       &kp AT   &kp HASH &kp DLLR &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR      &kp RPAR       &kp MINUS
+&kp TILDE &kp HOME       &kp INS  &kp DEL  &kp END  &kp PSCRN                    &kp PG_UP &kp EQUAL &kp LBKT        &kp RBKT      &kp GRAVE      &kp UNDER
+&kp LSHFT &mt LCTRL PIPE &kp LGUI &kp LALT &trans   &trans    &none  &bootloader &kp PG_DN &kp PLUS  &mt RALT LBRC   &mt RGUI RBRC &mt RCTRL BSLH &kp RSHFT
+                             &kp LGUI &trans   &kp TAB                      &kp SPACE   &trans  &kp LALT
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_DN C_BRI_UP>;
                 };
