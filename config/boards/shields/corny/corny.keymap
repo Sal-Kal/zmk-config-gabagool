@@ -4,19 +4,19 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 
-#define U_MOUSE_MOVE_MAX 1500
-#define U_MOUSE_SCROLL_MAX 100
+#define U_MOUSE_MOVE_MAX 2000
+#define U_MOUSE_SCROLL_MAX 300
 
 &mt {
     flavor = "balanced";
 };
 
 &mmv {
-    time-to-max-speed-ms = <700>;
+    time-to-max-speed-ms = <300>;
 };
 
 &msc {
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <300>;
 };
 
 / {
@@ -67,9 +67,9 @@
                 };
                 navigation_layer {
                         bindings = <
-&trans  &trans  &trans  &trans      &trans    &trans                         &kp K_COPY      &kp K_CUT       &trans        &trans            &kp K_PASTE  &trans 
-&kp B   &mo 4   &trans  &mkp RCLK   &mkp LCLK &trans                         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   &kp RET      &trans 
-&trans  &trans  &trans  &trans      &trans    &trans     &none  &bootloader  &trans          &trans          &trans        &trans            &trans       &trans 
+&trans  &trans  &trans  &trans      &trans    &trans                         &kp K_COPY      &kp K_CUT       &mmv MOVE_UP    &trans            &kp K_PASTE  &trans 
+&kp B   &mo 4   &trans  &mkp RCLK   &mkp LCLK &trans                         &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &kp RET      &trans 
+&trans  &trans  &trans  &trans      &trans    &trans     &none  &bootloader  &trans          &trans          &trans          &trans            &trans       &trans 
                         &trans      &trans    &trans                         &trans          &trans          &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_DN C_BRI_UP>;
