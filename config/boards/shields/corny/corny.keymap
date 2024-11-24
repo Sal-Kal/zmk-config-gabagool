@@ -57,7 +57,7 @@
                 navigation_layer {
                         bindings = <
 &trans  &trans  &trans  &trans      &trans    &trans                         &trans          &trans          &trans        &trans            &trans    &trans 
-&trans  &trans  &trans  &&mkp RCLK  &mkp LCLK &trans                         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   &kp RET   &trans 
+&trans  &trans  &trans  &mkp RCLK  &mkp LCLK &trans                          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   &kp RET   &trans 
 &trans  &trans  &trans  &trans      &trans    &trans     &none  &bootloader  &trans          &trans          &trans        &trans            &trans    &trans 
                         &trans      &trans    &trans                         &trans          &trans          &trans
                         >;
